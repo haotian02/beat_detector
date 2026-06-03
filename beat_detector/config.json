@@ -1,0 +1,18 @@
+{
+  "sample_rate": 48000,
+  "frame_size": 1024,
+  "hop_size": 256,
+  "sensitivity": 1.5,
+  "noise_floor": 50.0,
+  "min_interval_ms": 50,
+  "history_window_s": 2.0,
+  "enabled": true,
+  "keybind": "s",
+  "frequency_bands": [
+    {"name": "low", "low": 60, "high": 250, "weight": 1.2},
+    {"name": "mid", "low": 150, "high": 2000, "weight": 1.0},
+    {"name": "high", "low": 2000, "high": 8000, "weight": 0.7}
+  ],
+  "device_name": null,
+  "show_debug": false
+}
