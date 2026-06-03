@@ -21,6 +21,8 @@
 
 ### 🎮 Forza Horizon 应用场景
 
+![FH6 效果展示](fh6.png)
+
 本项目专为 **Forza Horizon 3 / 4 / 5 / 6**（极限竞速：地平线 3~6 代）的刹车灯音乐联动而设计。
 
 通过 Python 实时检测音乐中的鼓点/节拍，模拟外接键盘输入来触发游戏中的刹车动作，使车辆刹车灯跟随音乐节奏闪烁，营造极具观赏性的节奏灯光效果。
@@ -105,6 +107,8 @@ A real-time drum beat detector that captures system audio via WASAPI loopback, d
 - **Zero Extra Dependencies** — Only requires NumPy; web server uses Python standard library
 
 ### 🎮 Forza Horizon Use Case
+
+![FH6 Demo](fh6.png)
 
 This project is purpose-built for **Forza Horizon 3 / 4 / 5 / 6** brake light music sync.
 
