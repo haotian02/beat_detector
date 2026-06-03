@@ -19,6 +19,24 @@
 - **高度可配** — 灵敏度、噪声底线、最小间隔、模拟按键均可通过 Web UI 或命令行调整
 - **零额外依赖** — 仅需 NumPy；Web 服务器使用 Python 标准库
 
+### 🎮 Forza Horizon 应用场景
+
+本项目专为 **Forza Horizon 3 / 4 / 5 / 6**（极限竞速：地平线 3~6 代）的刹车灯音乐联动而设计。
+
+通过 Python 实时检测音乐中的鼓点/节拍，模拟外接键盘输入来触发游戏中的刹车动作，使车辆刹车灯跟随音乐节奏闪烁，营造极具观赏性的节奏灯光效果。
+
+> **使用前请务必注意：**
+>
+> - 游戏中必须切换为 **手动挡**（Manual Transmission），否则刹车灯联动无法正常工作
+> - 推荐使用 **外接键盘** 绑定刹车按键，避免干扰正常游戏操作
+> - 将配置文件中的 `keybind` 设为外接键盘上对应刹车输入的按键
+
+**使用方法：**
+1. 进入 Forza Horizon 游戏设置，将变速箱模式切换为 **手动挡**
+2. 准备一个外接键盘，确认其刹车按键映射
+3. 修改 `config.json` 中的 `keybind` 为对应的按键（默认为 `s`）
+4. 运行程序，播放音乐，刹车灯将自动跟随节拍亮起 🎵
+
 ### 环境要求
 
 - Windows 10/11
@@ -85,6 +103,24 @@ A real-time drum beat detector that captures system audio via WASAPI loopback, d
 - **Low Latency** — WASAPI loopback capture with configurable hop size
 - **Configurable** — Sensitivity, noise floor, minimum interval, key binding all adjustable via web UI or CLI
 - **Zero Extra Dependencies** — Only requires NumPy; web server uses Python standard library
+
+### 🎮 Forza Horizon Use Case
+
+This project is purpose-built for **Forza Horizon 3 / 4 / 5 / 6** brake light music sync.
+
+It detects drum beats and rhythm in real-time via Python, then simulates keyboard input to trigger the brake action in-game — making your car's brake lights flash in perfect sync with the music for a stunning visual effect.
+
+> **Important notes before use:**
+>
+> - You **must switch to Manual Transmission** in-game, otherwise the brake light sync will not work
+> - An **external keyboard** is highly recommended for binding the brake key, so it won't interfere with normal gameplay
+> - Set the `keybind` in config to the brake key mapped on your external keyboard
+
+**How to use:**
+1. In Forza Horizon settings, switch the transmission to **Manual**
+2. Prepare an external keyboard and confirm its brake key mapping
+3. Update `config.json` with the correct `keybind` (default: `s`)
+4. Launch the program, play some music, and watch your brake lights pulse to the beat 🎵
 
 ### Requirements
 
