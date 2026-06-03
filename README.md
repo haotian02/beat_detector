@@ -72,7 +72,7 @@ python -m beat_detector.main [选项]
 
 | 参数 | 默认值 | 说明 |
 |---------|---------|-------------|
-| `sensitivity` | 1.5 | 检测灵敏度（越高越容易触发） |
+| `sensitivity` | 1.5 | 检测灵敏度（越低越容易触发） |
 | `noise_floor` | 50.0 | 触发的最低通量值 |
 | `min_interval_ms` | 50 | 两次触发之间的最小间隔 |
 | `hop_size` | 256 | 处理步长（越大越省 CPU） |
@@ -157,7 +157,7 @@ Edit `beat_detector/config.json` or use the web control panel:
 
 | Setting | Default | Description |
 |---------|---------|-------------|
-| `sensitivity` | 1.5 | Detection sensitivity (higher = more triggers) |
+| `sensitivity` | 1.5 | Detection sensitivity (lower = more easy triggers) |
 | `noise_floor` | 50.0 | Minimum flux value to trigger |
 | `min_interval_ms` | 50 | Minimum time between beats |
 | `hop_size` | 256 | Processing step size (larger = less CPU) |
